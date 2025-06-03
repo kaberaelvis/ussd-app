@@ -1,0 +1,20 @@
+type: web
+gitHubRepo: your-username/ussd-app
+branch: main
+buildCommand: composer install
+startCommand: php -S 0.0.0.0:8080 -t public
+env:
+  - key: AT_USERNAME
+    value: Elvis KABERA
+  - key: AT_API_KEY
+    value: atsk_b96080533349a566f55c8147135563589f692e32cb9edb80b1d6deea8d3ffab0e8379b7f
+  - key: DB_HOST
+    value: localhost
+  - key: DB_USER
+    value: root
+  - key: DB_PASS
+    value: ''
+  - key: DB_NAME
+    value: ines_ruhengeri
+  - key: DB_PORT
+    value: 3306
