@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ussd-app
+    env: python
+    pythonVersion: 3.10
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    envVars:
+      - key: localhost
+        value: your_db_host
+      - key: root
+        value: your_db_user
+      - key: 
+        value: your_db_password
+      - key: DB_NAME
+        value: ines_ruhengeri
+      - key: SECRET_KEY
+        value: your_secret_key
